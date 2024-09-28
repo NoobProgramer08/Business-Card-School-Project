@@ -1,0 +1,217 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*initiate animation */
+body {
+  background: linear-gradient(120deg, #333333, #111111);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px;
+}
+
+/* Keyframes for background animation */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/*  animations to images  */
+.image-container img,
+.qr img {
+  animation: float 5s ease-in-out infinite;
+}
+
+/*  for floating images */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+body {
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px;
+}
+
+.image-container {
+  background-color: white;
+  height: 400px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.image-container img {
+  height: 400px;
+  width: 400px;
+}
+
+.positioning-1 {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  bottom: 200px;
+  margin-bottom: 50px;
+}
+
+.name {
+  border-bottom: solid white;
+  margin-bottom: 10px;
+}
+
+.texts h1 {
+  margin-bottom: 10px;
+}
+
+.texts {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: Roboto;
+  flex-direction: column;
+}
+
+.text-container {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background-color: black;
+  height: 401px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto;
+}
+
+.contacts {
+  margin-top: 50px;
+  text-align: center;
+  font-family: Roboto;
+}
+
+.contacts p {
+  margin: 5px;
+}
+
+.contacts #number {
+  font-size: 17px;
+}
+
+.add {
+  position: absolute;
+  top: 361px;
+}
+
+.add p {
+  text-align: center;
+}
+
+.address {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  width: 498px;
+  position: sticky;
+  top: 0;
+}
+
+.positioning-2 {
+  position: sticky;
+  top: 500px;
+  cursor: pointer;
+}
+
+.box2 {
+  background-color: black;
+  padding: 100px;
+  width: 700px;
+  height: 400px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.qr {
+  position: absolute;
+  top: 70px;
+  right: 30px;
+}
+
+.qr img {
+  height: 270px;
+}
+
+.get-touch {
+  font-family: Jetbrains Mono;
+  position: absolute;
+  color: gold;
+  bottom: 100px;
+  left: 10px;
+}
+
+.get-touch h1 {
+  font-size: 26px;
+}
+
+.let-me p {
+  font-size: 25px;
+  color: white;
+  position: absolute;
+  bottom: 60px;
+  left: 20px;
+  font-family: Jetbrains Mono;
+}
+
+#websites {
+  font-size: 25px;
+  color: white;
+  position: absolute;
+  bottom: 22px;
+  left: 18px;
+  font-family: Jetbrains Mono;
+}
+
+.paragraphs p {
+  text-align: left;
+}
+
+.shape {
+  position: absolute;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.shape img {
+  position: sticky;
+  height: 180px;
+}
+
+.contacts img {
+  height: 20px;
+  position: absolute;
+  left: 330px;
+}
